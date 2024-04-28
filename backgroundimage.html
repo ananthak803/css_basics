@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background image</title>
+    <style>
+        #bi{
+            height: 20px;
+            width: 150px;
+/*adding image path*/
+            background-image: url(assets/yt.jpg);
+
+/*fitting the image in given 20*150 box*/
+            background-size: contain;
+
+/*stop repeating image to fill all the pixels*/
+            background-repeat: no-repeat;
+
+/*set the postion of image anywhere on the page*/
+            background-position: top;
+        }
+    </style>
+<!-- background shorthand : color,image,repeat,attachment,position . Example in project2 -->
+</head>
+<body>
+    <div id="bi"></div>
+</body>
+</html>

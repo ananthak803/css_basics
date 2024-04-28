@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #bar{
+            color:rgba(255,0,0,1);
+            background-color:rgba(0,0,0,0.7);
+        }
+        main{
+            height: 500px;
+            background-color: cornflowerblue;
+        }
+        #im{
+            height:100px;
+            /*
+            background-image: url(assets/yt.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;*/
+/*shorthand*/
+            background:green url(assets/yt.jpg) no-repeat center;
+            background-size:contain ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="bar">Hello</div>
+    </header>
+    <main>
+        <p>this is main</p>
+        <div id="im"></div>
+    </main>
+    <footer>this is footer</footer>
+    
+</body>
+</html>

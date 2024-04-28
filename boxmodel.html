@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodel</title>
+<!--content:padding:border:margin-->
+    <style>
+        *{
+            height: 50px;
+            width: 50px;
+        }
+        #t1{
+            background-color: blue;
+            padding: 10px;
+            margin: 10px 20px 30px 40px;
+        }
+        #t2{
+            background-color: red;
+            padding: 20px;
+            margin: 20px;
+        }
+        #t3{
+            background-color: chocolate;
+            padding: 10px;
+            margin: 40px;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+        #t4{
+            background-color: rgb(237, 5, 121);
+            padding: 10px;
+            margin: 20px;
+            border: 5px dotted rgb(255, 7, 7);
+/* clockwise order top right bottm left*/
+            border-radius: 5px 20px 20px 5px;
+        }
+/*
+box-sizing: border-box;(content size reduced to fit padding in box)
+box-sizing: content-box;(default)(padding and margin are outside defined box)
+*/
+    </style>
+</head>
+<body>
+    <div class="box" id="t1">box1</div> 
+    <div class="box" id="t2">box2</div>    
+    <div class="box" id="t3">box3</div>
+    <div class="box" id="t4">box4</div>
+</body>
+</html>

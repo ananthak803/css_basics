@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+/*id selector*/
+        #heading{
+            color:hotpink;
+        }
+/*class selector*/
+        .subhead{
+            color: rgb(3, 66, 255);
+        }
+/*group selectors*/
+        #h4,#h5{
+            color: cyan;
+        }
+
+/*descendent selector*/
+        #first p{
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">hello</h1>
+    <h2 class="subhead">hello2</h2>
+    <h3 class="subhead">hello3</h3>
+    <div id="first">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, assumenda.</p>
+        <h1>hello</h1> 
+    </div>
+    <h4 id="h4">hi</h4>
+    <h5 id="h5">hiii</h5>
+</body>
+</html>

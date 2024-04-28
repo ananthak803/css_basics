@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color property</title>
+<!-- linking css file -->
+    <link rel="stylesheet" href="index.css">
+<!-- #internal styling -->
+<!-- applied to all target elements(h1,p) present if no inline styling is on them -->
+    <style>
+        h1{color:aqua;}
+        p{color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Hello There </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error excepturi repudiandae fugiat recusandae corporis architecto dolorum numquam quos aliquid aliquam.</p>
+<!-- ##inline styling -->
+<!-- inline styling has greater priority -->
+    <h2 style="color:rgb(241, 136, 7)">Hiiiiiiii</h2>
+    <p style="color:yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aliquid?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, odit.</p>
+<!-- ###external styling -->
+    <h3>This is external styling</h3>
+<!-- priority in increasing order: external styling < internal styling < inline styline -->
+</body>
+</html>
