@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 1px solid #000;
+            background-color: red;
+            position: relative;
+            left: 30px;
+            margin-top: 40px;
+            transition: all 1s ease-in-out; 
+        }
+        #box1:hover{
+            transform: rotate(45deg);
+        }
+        #box2:hover{
+            transform: rotatex(75deg);
+        }
+        #box3:hover{
+            transform: rotateY(60deg);
+        }
+        #box4:hover{
+            transform: rotateZ(360deg);
+        }
+        #box5:hover{
+            transform: scale(4);
+        }
+        #box6:hover{
+            transform: scale(0.5);
+        }
+        #box7:hover{
+            transform: scaleX(2);
+        }
+        #box8:hover{
+            transform: scaleY(0.5);
+        }
+        #box9:hover{
+            transform: translate(50px);
+        }
+        #box10:hover{
+            transform:translateX(50px);
+        }
+        #box11:hover{
+            transform: translateY(-30px);
+        }
+        #box12:hover{
+            transform: translate(50px,-50px);
+        }
+        #box13:hover{
+            transform: skew(45deg);
+        }
+        #box14:hover{
+            transform: skew(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">45deg</div>
+    <div id="box2" class="box">75deg x</div>
+    <div id="box3" class="box">60deg y</div>
+    <div id="box4" class="box">360deg z</div>
+    <div id="box5" class="box">scale 4</div>
+    <div id="box6" class="box">scale 0.5</div>
+    <div id="box7" class="box">scale x</div>
+    <div id="box8" class="box">scale y</div>
+    <div id="box9" class="box">translate</div>
+    <div id="box10" class="box">translate x</div>
+    <div id="box11" class="box">translate y</div>
+    <div id="box12" class="box">translate xy</div>
+    <div id="box13" class="box">skew 45</div>
+    <div id="box14" class="box">skew 90</div>
+</body>
+</html>

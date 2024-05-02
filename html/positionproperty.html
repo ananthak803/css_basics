@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        #box1{
+            position: static; /*defult position*/
+        }
+        #box2{
+            position:relative; /*position changes relative to default position*/
+            top: 5px;/*position changes 5 px from top to bottom*/
+            left: 60px;/*postion changes 60 px from left to right*/
+        }
+        #box3{
+            position: fixed;
+        }
+        #box4{
+            position: absolute; /*relative to the left corner of page*/
+            top: 400px;
+            left: 70px;
+        }
+        #box5{
+            position: relative;
+            left: 130px;
+            top: 40px;
+            z-index: 1;
+        }
+/*greater z index value moves forward and lower z index value moves backward*/
+        #box6{
+            position: relative;
+            left: 100px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+    <div id="box4" class="box">box4</div>
+    <div id="box5" class="box">box5</div>
+    <div id="box6" class="box">box6</div>
+</body>
+</html>

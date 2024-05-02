@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #container{
+            height: 500px;
+            width: 500px;
+            background-color: wheat;
+            display: flex ;
+            flex-direction: row-reverse;
+/*          flex-direction: column;flex-direction: column-reverse;flex-direction:row;    */
+/* flex box manipulates size of boxes inside it according to size */
+            justify-content: center;
+/*similar to justify-content we can use align-content to give vertical spaces between elements and it is different from align-items*/
+/* justify conent:flex-start,flex-end,center,space-between,space-around,space-evenly*/
+            align-items: center;/*align items to the center of cross axis and other attribute values are "start" , "end"*/
+            
+        }
+        #container2{
+            height: 300px;
+            width: 400px;
+            background-color: antiquewhite;
+            display: flex;
+            
+            flex-wrap: wrap;/*flex-wrap:nowrap(default) , flexwrap:wrap-reverse(recent item at top . different from row-reverse)*/
+        }
+        .flexbox{
+            height: 120px;
+            width: 120px;
+            background-color: red;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        #box3{
+            align-self: flex-end;/*to target single element in flexbox*/
+        }
+        #box2{
+            flex-shrink: 3;/*box 2 will shrink 3 times the box 3 .if box 3 shrinks 10% box 2 will shrink 30%*/
+/*            order: 1;*/ /*changes the order of elements in flexbox */
+        }
+        #box4{
+            flex-grow: 1;/*it expans the element to max size if available*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+    </div><hr>
+    <div id="container2">
+        <div id="box4" class="flexbox">box4</div>
+        <div id="box5" class="flexbox">box5</div>
+        <div id="box6" class="flexbox">box6</div>
+    </div>
+</body>
+</html>

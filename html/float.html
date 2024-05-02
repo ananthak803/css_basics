@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        #container{
+            height: 60px;
+            width: 120px;
+            border: 2px solid black;
+        }
+        .box{
+            height: 50px;
+            width: 50px;margin: 5px;
+        }
+        #box1{
+/*element floats to the right side of parent */
+            background-color: red;
+            float: right;
+        }
+        #box2{
+            background-color: blue;
+            float: left;
+/*          float: none;*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative unit</title>
+    <style>
+        *{font-size: 20px;}
+/* as we change the dimensions of parent element box1 the dimension of box2 changes */
+        #box1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        #box2{
+            background-color: rgb(155, 155, 41);
+            height: 50%;
+            width: 50%;
+        }
+/*font size changes as parent element font changes. 2 em means 2 times the size of parent element */
+        #box3{
+            background-color: green;
+            height: 100px;width: 100px;
+            font-size: 20px;
+        }
+        #box4{
+            background-color: brown;
+            width: 50%;height: 50%;
+            font-size: 2em;
+        }
+        #box5{
+            height: 50%;
+            width: 50%;
+            font-size: 2rem;
+        }
+        #box6{
+            height:50vh;
+            width: 50vw;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+<!--percentage-->
+    <div id="box1">
+        box1
+        <div id="box2">
+            box2
+        </div>
+    </div>
+<!--em-->
+    <div id="box3">box3
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+    </div><hr>
+ <!--rem is same as em but rem doesnot depends on parent element it is dependent on root element-->
+ <!--viewport height vh and viewport width vw-->
+    <div id="box6">box6</div>
+</body>
+</html>

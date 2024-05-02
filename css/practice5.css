@@ -1,0 +1,51 @@
+nav{
+    background-color: darkgreen;
+    border: 2px solid black;
+    border-radius: 20px;
+    
+}
+nav a{
+    margin: 27vh;
+    color: red;
+    text-decoration: none;
+}
+#div1{
+    height: 40vh;
+    background-color: darkgreen;
+    position: relative;
+    top: 10px;
+    border: 2px;
+    border-radius: 15px;
+}
+#container{
+    height: 50vh;
+    border: 2px solid black;
+    position: relative;
+    top: 15px;
+}
+#div2,#div3{
+    background-color:  red;
+    height:80%;
+    width: 40%;
+    display: inline-block;
+    margin: 20px;
+}
+footer{
+    position: relative;
+    top: 20px;
+    
+}
+footer a{
+  margin: 10px;
+}
+#div4{
+    height: 90vh;
+    width: 20px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 8px;
+    left: 90vw;
+    z-index: 2;
+}
